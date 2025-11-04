@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dumbways</title>
+<style>
+  body {
+    background: linear-gradient(135deg, #4A00E0, #8E2DE2);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 80px;
+  }
+  .box {
+    background: rgba(255,255,255,0.2);
+    padding: 30px;
+    width: 80%;
+    margin: auto;
+    border-radius: 15px;
+  }
+  input {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+</style>
+</head>
+<body>
+  <h1>🎬 Dumbways</h1>
+  <h3>Free AI Video Cutter — No watermark, No limit ✅</h3>
+  <div class="box">
+    <p>Upload a video to get started 👇</p>
+    <input type="file" accept="video/*" />
+    <p style="font-size:12px;">(Feature coming next!)</p>
+  </div>
+</body>
+</html>
