@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dumbways - Free AI Video Slicer</title>
+<style>
+body {
+    background: #000;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: #00eeff;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+}
+
+.title {
+    font-size: 45px;
+    font-weight: bold;
+    color: cyan;
+    text-shadow: 0 0 15px cyan;
+}
+
+.tagline {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #baffff;
+}
+
+.upload-btn {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #072026;
+    color: cyan;
+    border: 2px solid cyan;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.upload-btn:hover {
+    background: cyan;
+    color: #000;
+}
+
+.upload-btn input {
+    display: none;
+}
+
+.slice-btn {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    background: #00141a;
+    color: cyan;
+    border-radius: 10px;
+    border: 2px solid cyan;
+    cursor: pointer;
+    transition: 0.25s;
+    font-size: 18px;
+}
+
+.slice-btn:hover {
+    background: cyan;
+    color: #000;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #84ffff;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+    <h1 class="title">DUMBWAYS</h1>
+    <p class="tagline">Unlimited AI video slicing. No watermarks. No limit.</p>
+
+    <label class="upload-btn">
+        <input type="file" id="videoUpload" accept="video/*">
+        Select Video
+    </label>
+
+    <button class="slice-btn" onclick="processVideo()">Slice It!</button>
+
+    <div id="status"></div>
+</div>
+
+<script>
+function processVideo() {
+    const status = document.getElementById('status');
+    status.innerText = "⏳ Processing video... (AI feature coming soon)";
+}
+</script>
+</body>
+</html>
